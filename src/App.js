@@ -1,10 +1,11 @@
 // import logo from './logo.svg';
 import './App.css';
-import About from './components/About';
+// import About from './components/About';
 // import Navbar from './components/SideBar'
 import Team from './components/Team';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import SideBar from './components/SideBar';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
     <Router>
       <SideBar>
       <Routes>
-        <Route path='/' element={About}/>
+        <Route path='/' element={Home}/>
       </Routes>
       </SideBar>
     </Router>

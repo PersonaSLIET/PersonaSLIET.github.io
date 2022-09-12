@@ -6,7 +6,6 @@ import SidebarMenu from "./SidebarMenu";
 import { SiAboutdotme, SiClubhouse } from 'react-icons/si'
 import {BsFillPersonBadgeFill} from 'react-icons/bs'
 import { FaBars,FaFacebookMessenger, FaHome, FaUser } from "react-icons/fa";
-import { BiSearch } from "react-icons/bi";
 import { MdMessage } from "react-icons/md";
 import {GoOrganization} from 'react-icons/go'
 import { IoGlassesOutline } from 'react-icons/io5'
@@ -117,11 +116,6 @@ const SideBar = ({ children }) => {
               <FaBars onClick={toggle} />
             </div>
           </div>
-          <div className="search d-none">
-            <div className="search_icon">
-              <BiSearch />
-            </div>
-          </div>
           <section className="routes">
             {routes.map((route, index) => {
               if (route.subRoutes) {
@@ -140,7 +134,7 @@ const SideBar = ({ children }) => {
                   to={route.path}
                   key={index}
                   className="link"
-                  activeClassName="active"
+                  activeclassname="active"
                 >
                   <div className="icon">{route.icon}</div>
                   <AnimatePresence>
