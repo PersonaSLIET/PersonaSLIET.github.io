@@ -18,8 +18,7 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    icon: <FaHome />,
-    key: "home"
+    icon: <FaHome />
   },
   {
     path: "/about",
