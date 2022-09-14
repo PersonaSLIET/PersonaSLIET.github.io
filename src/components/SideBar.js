@@ -3,12 +3,13 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
 
-import { SiAboutdotme, SiClubhouse } from 'react-icons/si'
-import {BsFillPersonBadgeFill} from 'react-icons/bs'
-import { FaBars,FaFacebookMessenger, FaHome, FaUser } from "react-icons/fa";
+import { SiClubhouse } from 'react-icons/si'
+import {BsFillPersonBadgeFill, BsFillTelephoneOutboundFill, BsFillInfoSquareFill} from 'react-icons/bs'
+import { FaBars, FaHome, FaChalkboardTeacher } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";
 import {GoOrganization} from 'react-icons/go'
-import { IoGlassesOutline } from 'react-icons/io5'
+// import { IoGlassesOutline } from 'react-icons/io5'
+// import {FcAbout} from 'react-icons/fc'
  
 const routes = [
   {
@@ -17,39 +18,39 @@ const routes = [
     icon: <FaHome />,
   },
   {
-    path: "/team",
-    name: "Team",
-    icon: <FaUser />,
+    path: "/about",
+    name: "About Us",
+    icon: <BsFillInfoSquareFill />,
   },
   {
     path: "/activities",
-    name: "Upcoming Activities",
+    name: "Activities",
     icon: <MdMessage />,
   },
   {
     path: "/faculties",
     name: "Faculties",
-    icon: <IoGlassesOutline />,
+    icon: <FaChalkboardTeacher />,
   },
   {
-    path: "/about",
-    name: "About",
-    icon: <SiAboutdotme />,
+    path: "/team",
+    name: "Team",
+    icon: <GoOrganization />,
     exact: true,
     subRoutes: [
       {
-        path: "/about/club",
-        name: "Club ",
+        path: "/team/members",
+        name: "Members ",
         icon: <SiClubhouse />,
       },
       {
-        path: "/about/alumni",
-        name: "Alumni",
+        path: "/team/mentors",
+        name: "Mentors",
         icon: <BsFillPersonBadgeFill />,
       },
       {
-        path: "/about/mentor",
-        name: "Mentors",
+        path: "/team/alumnis",
+        name: "Alumnis",
         icon: <GoOrganization />,
       },
     ],
@@ -57,7 +58,7 @@ const routes = [
   {
     path: "/contact",
     name: "Contact Us",
-    icon: <FaFacebookMessenger />,
+    icon: <BsFillTelephoneOutboundFill />,
   },
 ];
 
