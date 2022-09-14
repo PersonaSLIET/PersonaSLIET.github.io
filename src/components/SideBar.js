@@ -4,10 +4,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
 
 import { SiClubhouse } from 'react-icons/si'
-import {BsFillPersonBadgeFill, BsFillTelephoneOutboundFill, BsFillInfoSquareFill} from 'react-icons/bs'
+import {BsFillPersonBadgeFill, BsFillTelephoneOutboundFill, BsFillInfoSquareFill, BsPersonSquare} from 'react-icons/bs'
 import { FaBars, FaHome, FaChalkboardTeacher } from "react-icons/fa";
-import { MdMessage } from "react-icons/md";
+// import { MdMessage } from "react-icons/md";
 import {GoOrganization} from 'react-icons/go'
+import {TbActivity, TbActivityHeartbeat} from 'react-icons/tb'
+import {RiHistoryFill} from 'react-icons/ri'
+import {GiTransportationRings} from 'react-icons/gi'
 // import { IoGlassesOutline } from 'react-icons/io5'
 // import {FcAbout} from 'react-icons/fc'
  
@@ -30,24 +33,24 @@ const routes = [
       {
         path: "/about/history",
         name: "History",
-        icon: <BsFillPersonBadgeFill />,
+        icon: <RiHistoryFill />,
       }
     ],
   },
   {
     path: "/activities",
     name: "Activities",
-    icon: <MdMessage />,
+    icon: <GiTransportationRings />,
     subRoutes: [
       {
         path: "/activities/upcoming",
         name: "Upcoming",
-        icon: <SiClubhouse />,
+        icon: <TbActivity />,
       },
       {
         path: "/activities/past",
         name: "Past Activities",
-        icon: <BsFillPersonBadgeFill />,
+        icon: <TbActivityHeartbeat />,
       }
     ],
   },
@@ -75,7 +78,7 @@ const routes = [
       {
         path: "/team/alumnis",
         name: "Alumnis",
-        icon: <GoOrganization />,
+        icon: <BsPersonSquare />,
       },
     ],
   },

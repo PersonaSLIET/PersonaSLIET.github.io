@@ -92,7 +92,7 @@ const SidebarMenu = ({ route, showAnimation, isOpen, setIsOpen }) => {
             {route.subRoutes.map((subRoute, i) => (
               <motion.div variants={menuItemAnimation} key={i} custom={i}>
                 <NavLink to={subRoute.path} className="link">
-                  <div className="icon">{subRoute.icon}</div>
+                  <div className="icon"><p>{subRoute.icon}</p></div>
                   <motion.div className="link_text">{subRoute.name}</motion.div>
                 </NavLink>
               </motion.div>
