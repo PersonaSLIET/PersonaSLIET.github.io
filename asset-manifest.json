@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/PersonaSLIET.github.io/static/css/main.e11aeb9c.css",
-    "main.js": "/PersonaSLIET.github.io/static/js/main.219e2249.js",
+    "main.js": "/PersonaSLIET.github.io/static/js/main.9036b800.js",
     "static/js/787.602336bd.chunk.js": "/PersonaSLIET.github.io/static/js/787.602336bd.chunk.js",
     "index.html": "/PersonaSLIET.github.io/index.html",
     "main.e11aeb9c.css.map": "/PersonaSLIET.github.io/static/css/main.e11aeb9c.css.map",
-    "main.219e2249.js.map": "/PersonaSLIET.github.io/static/js/main.219e2249.js.map",
+    "main.9036b800.js.map": "/PersonaSLIET.github.io/static/js/main.9036b800.js.map",
     "787.602336bd.chunk.js.map": "/PersonaSLIET.github.io/static/js/787.602336bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e11aeb9c.css",
-    "static/js/main.219e2249.js"
+    "static/js/main.9036b800.js"
   ]
 }
