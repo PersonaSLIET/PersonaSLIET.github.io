@@ -21,11 +21,35 @@ const routes = [
     path: "/about",
     name: "About Us",
     icon: <BsFillInfoSquareFill />,
+    subRoutes: [
+      {
+        path: "/about/club",
+        name: "Club ",
+        icon: <SiClubhouse />,
+      },
+      {
+        path: "/about/history",
+        name: "History",
+        icon: <BsFillPersonBadgeFill />,
+      }
+    ],
   },
   {
     path: "/activities",
     name: "Activities",
     icon: <MdMessage />,
+    subRoutes: [
+      {
+        path: "/activities/upcoming",
+        name: "Upcoming",
+        icon: <SiClubhouse />,
+      },
+      {
+        path: "/activities/past",
+        name: "Past Activities",
+        icon: <BsFillPersonBadgeFill />,
+      }
+    ],
   },
   {
     path: "/faculties",

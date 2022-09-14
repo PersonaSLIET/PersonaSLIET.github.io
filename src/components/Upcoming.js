@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Activities = () => {
+const Upcoming = () => {
   return (
     <div>
       Upcoming Activities
@@ -8,4 +8,4 @@ const Activities = () => {
   )
 }
 
-export default Activities
+export default Upcoming
