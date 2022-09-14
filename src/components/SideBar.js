@@ -19,6 +19,7 @@ const routes = [
     path: "/",
     name: "Home",
     icon: <FaHome />,
+    key: "home"
   },
   {
     path: "/about",
@@ -29,11 +30,13 @@ const routes = [
         path: "/about/club",
         name: "Club ",
         icon: <SiClubhouse />,
+        key: "club"
       },
       {
         path: "/about/history",
         name: "History",
         icon: <RiHistoryFill />,
+        key: "history"
       }
     ],
   },
@@ -46,11 +49,13 @@ const routes = [
         path: "/activities/upcoming",
         name: "Upcoming",
         icon: <TbActivity />,
+        key: "upcoming"
       },
       {
         path: "/activities/past",
         name: "Past Activities",
         icon: <TbActivityHeartbeat />,
+        key: "past"
       }
     ],
   },
@@ -58,6 +63,7 @@ const routes = [
     path: "/faculties",
     name: "Faculties",
     icon: <FaChalkboardTeacher />,
+    key: "faculties"
   },
   {
     path: "/team",
@@ -69,16 +75,19 @@ const routes = [
         path: "/team/members",
         name: "Members ",
         icon: <SiClubhouse />,
+        key: "members"
       },
       {
         path: "/team/mentors",
         name: "Mentors",
         icon: <BsFillPersonBadgeFill />,
+        key: "mentors"
       },
       {
         path: "/team/alumnis",
         name: "Alumnis",
         icon: <BsPersonSquare />,
+        key: "alumnis"
       },
     ],
   },
@@ -86,6 +95,7 @@ const routes = [
     path: "/contact",
     name: "Contact Us",
     icon: <BsFillTelephoneOutboundFill />,
+    key: "contact"
   },
 ];
 
@@ -149,6 +159,7 @@ const SideBar = ({ children }) => {
               if (route.subRoutes) {
                 return (
                   <SidebarMenu
+                    key={index}
                     setIsOpen={setIsOpen}
                     route={route}
                     showAnimation={showAnimation}
