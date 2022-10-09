@@ -37,6 +37,7 @@ main {
 }
 .bars {
   width: 30px;
+  cursor: pointer;
 }
 .hide {
   display: none;
@@ -98,6 +99,7 @@ main {
 .menu_item {
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 .menu_container {
   display: flex;

@@ -1,6 +1,6 @@
 import './App.css';
 
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { HashRouter as Router, Routes, Route} from 'react-router-dom'
 import SideBar from './components/SideBar';
 import Home from './components/Home';
 import Faculties from './components/Faculties';
@@ -13,13 +13,17 @@ import Upcoming from './components/Upcoming'
 import Past from './components/Past'
 import Club from './components/Club';
 
+
 function App() {
+
   return (
     <>
     <Router>
       <SideBar>
       <Routes>
         <Route path='/' element={<Home/>}/>
+          {/* <Navigate to="/home" />  */}
+        {/* <Route path="/" element={<Home/> ? <Navigate to="/" /> : <Home/>}/> */}
         <Route path='/about/club' element={<Club/>}/>
         <Route path='/about/history' element={<History/>}/>
         <Route path='/activities/upcoming' element={<Upcoming/>}/>
